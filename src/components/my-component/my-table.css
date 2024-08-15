@@ -1,0 +1,33 @@
+@import '~datatables.net-dt/css/dataTables.dataTables.css';
+
+:host {
+  display: block;
+  overflow-x: auto;
+}
+
+.dataTables_wrapper {
+  margin: 20px 0;
+}
+
+img {
+  max-width: 100px;
+  height: auto;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin: 20px 0;
+}
+table>thead>tr>th{
+background-color: #6c757d;
+color: white;
+}
+table.dataTable tbody tr:nth-child(odd) {
+  background-color: #f9f9f9; /* Color para filas impares */
+}
+
+table.dataTable tbody tr:nth-child(even) {
+  background-color: #ffffff; /* Color para filas pares */
+}
+
