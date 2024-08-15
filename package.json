@@ -1,5 +1,5 @@
 {
-  "name": "componente-01-sillumiquinga1",
+  "name": "componente-01-sillumiquinga",
   "version": "0.0.1",
   "description": "Stencil Component Starter",
   "main": "dist/index.cjs.js",
@@ -7,11 +7,11 @@
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/componente-01-sillumiquinga1/componente-01-sillumiquinga1.esm.js",
+  "unpkg": "dist/componente-01-sillumiquinga/componente-01-sillumiquinga.esm.js",
   "exports": {
     ".": {
-      "import": "./dist/componente-01-sillumiquinga1/componente-01-sillumiquinga1.esm.js",
-      "require": "./dist/componente-01-sillumiquinga1/componente-01-sillumiquinga1.cjs.js"
+      "import": "./dist/componente-01-sillumiquinga/componente-01-sillumiquinga.esm.js",
+      "require": "./dist/componente-01-sillumiquinga/componente-01-sillumiquinga.cjs.js"
     },
     "./my-component": {
       "import": "./dist/components/my-component.js",

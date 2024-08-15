@@ -1,7 +1,7 @@
 import { Config } from '@stencil/core';
 
 export const config: Config = {
-  namespace: 'componente-01-sillumiquinga1',
+  namespace: 'componente-01-sillumiquinga',
   outputTargets: [
     {
       type: 'dist',
