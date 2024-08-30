@@ -5,7 +5,7 @@
 Este es un componente de tabla que consume un api, creado en stencil para poder instalarlo y hacerle modificaciones ejecute:
 ```bash
 git clone https://github.com/Wilz22/table-component.git
-cd table-component.git
+cd table-component
 ```
 
 and run:

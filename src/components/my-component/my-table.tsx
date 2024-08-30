@@ -33,8 +33,7 @@ export class MyTable {
         throw new Error('Error al obtener los datos de la API');
       }
       const result = await response.json();
-      // Extraer la lista de productos de la propiedad 'data'
-      this.data = result.data;
+      this.data = Array.isArray(result) ? result : [result];
     } catch (error) {
       this.error = error.message;
     }
@@ -56,25 +55,23 @@ export class MyTable {
       return <div>Cargando datos...</div>;
     }
 
+    const headers = Object.keys(this.data[0]);
+
     return (
       <table class="table table-striped">
         <thead>
           <tr>
-            <th># Productos</th>
-            <th>Nombre</th>
-            <th>Precio</th>
-            <th>Imagen</th>
-            <th>Stock</th>
+            {headers.map(header => (
+              <th>{header}</th>
+            ))}
           </tr>
         </thead>
         <tbody>
           {this.data.map(item => (
             <tr>
-              <td>{item.id}</td>
-              <td>{item.nombre}</td>
-              <td>{item.precio}</td>
-              <td><img src={item.imagen} alt={item.nombre} /></td>
-              <td>{item.stock}</td>
+              {headers.map(header => (
+                <td>{typeof item[header] === 'object' ? JSON.stringify(item[header]) : item[header]}</td>
+              ))}
             </tr>
           ))}
         </tbody>
